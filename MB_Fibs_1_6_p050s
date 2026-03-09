@@ -621,6 +621,7 @@ AddChartBubble(Fib_bubbles_on and dupe_Fibs_down, Fib50dn,  AsPercent(0.50) + "|
 AddChartBubble(Fib_bubbles_on and dupe_Fibs_down, Fib20dn,  AsPercent(0.20) + "|" + AsPrice(Fib20dn), Fib20dn.TakeValueColor());
 AddChartBubble(Fib_bubbles_on and dupe_Fibs_down, Fib0dn,  AsPercent(0.00) + "|" + AsPrice(Fib0dn), Fib0dn.TakeValueColor());
 
+// Cloud features might not be possible in ACSIL C++ for Sierra Chart
 AddCloud(if !showClouds then na else Fib0up,if !showClouds then na else Fib20up,color.downtick);
 
 AddCloud(if !showClouds then na else Fib80up,if !showClouds then na else Fib100up,color.uptick);
